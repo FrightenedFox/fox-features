@@ -1,4 +1,5 @@
 import os
+from argparse import ArgumentParser
 from datetime import datetime
 
 
@@ -29,4 +30,8 @@ def main(filepath, output_filename=None):
 
 
 if __name__ == '__main__':
-    main("example.txt")
+    parser = ArgumentParser()
+    parser.add_argument("filepath", help="path to the source text", type=str)
+    parser.add_argument("-n", "--output_filename", help="name of the output file", type=str, default=None)
+    args = parser.parse_args()
+    main(args.filepath, args.output_filename)
