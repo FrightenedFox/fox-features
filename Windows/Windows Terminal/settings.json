@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -31,85 +32,69 @@
     "alwaysOnTop": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{00000000-0000-0000-ba54-000000000002}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "experimental.rendering.forceFullRepaint": true,
+    "experimental.rendering.software": false,
     "initialCols": 160,
     "initialRows": 40,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "size": 11
+            },
+            "opacity": 80,
+            "startingDirectory": "%USERPROFILE%",
+            "useAcrylic": true
+        },
         "list": 
         [
             {
-                "acrylicOpacity": 0.55000000000000004,
                 "closeOnExit": "graceful",
-                "colorScheme": "Campbell",
                 "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
                 "cursorColor": "#FFFFFF",
-                "cursorShape": "bar",
-                "font": 
-                {
-                    "face": "Cascadia Mono",
-                    "size": 14
-                },
                 "guid": "{00000000-0000-0000-ba54-000000000002}",
                 "historySize": 9001,
                 "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
                 "name": "Bash",
-                "padding": "8",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%/git_projects",
-                "useAcrylic": true
+                "startingDirectory": "%USERPROFILE%/git_projects"
             },
             {
-                "acrylicOpacity": 0.75,
                 "backgroundImage": null,
                 "backgroundImageOpacity": 0.40000000000000002,
                 "colorScheme": "AnacondaCmap",
                 "commandline": "%windir%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:/Users/vital/miniconda3/shell/condabin/conda-hook.ps1' ; conda activate 'C:/Users/vital/miniconda3' \"",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "size": 14
-                },
                 "guid": "{2679ff34-f6b9-5fcd-9b81-08b50df61bae}",
                 "icon": "%USERPROFILE%/OneDrive/Minimal_Suhb/conda_appearence/icons8-anaconda-128.png",
                 "name": "Miniconda",
+                "opacity": 80,
                 "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Miniconda",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.59999999999999998,
-                "colorScheme": "UbuntuCmap",
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "colorScheme": "Ubuntu-ColorScheme",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "Ubuntu",
-                "useAcrylic": true
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "acrylicOpacity": 0.5,
                 "colorScheme": "ArchCmap",
                 "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
                 "hidden": false,
                 "name": "Arch",
+                "opacity": 80,
                 "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Arch",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.59999999999999998,
-                "colorScheme": "DebianCmap",
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "hidden": false,
-                "name": "Debian",
-                "source": "Windows.Terminal.Wsl",
-                "tabTitle": "Debian",
-                "useAcrylic": true
-            },
-            {
-                "acrylicOpacity": 0.59999999999999998,
                 "colorScheme": "JuliaCmap",
                 "commandline": "%USERPROFILE%/AppData/Local/Programs/Julia-1.6.3/bin/julia.exe",
                 "cursorShape": "vintage",
@@ -117,58 +102,64 @@
                 "font": 
                 {
                     "face": "Consolas",
-                    "size": 14,
                     "weight": "normal"
                 },
                 "guid": "{3393c524-d331-4ef3-b0c5-5ba26d218dce}",
                 "icon": "%USERPROFILE%/AppData/Local/Programs/Julia-1.6.3/share/doc/julia/html/en/assets/julia.ico",
                 "intenseTextStyle": "all",
                 "name": "Julia",
+                "opacity": 80,
                 "padding": "8",
                 "scrollbarState": "hidden",
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.69999999999999996,
                 "colorScheme": "Campbell Powershell",
-                "commandline": "powershell.exe",
-                "font": 
-                {
-                    "size": 14
-                },
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "name": "Windows PowerShell",
-                "useAcrylic": true
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "%windir%/system32/cmd.exe",
-                "font": 
-                {
-                    "size": 14
-                },
+                "commandline": "%windir%\\system32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
+                "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": true
             },
             {
-                "font": 
-                {
-                    "size": 14
-                },
+                "colorScheme": "WolframCmap",
+                "commandline": "\"C:\\Program Files\\Wolfram Research\\Wolfram Engine\\13.0\\wolframscript.exe\"",
+                "guid": "{da1b4402-d32f-4f68-a1ba-1ef4e0b3f0ba}",
+                "icon": "%SystemDrive%\\Program Files\\Wolfram Research\\Wolfram Engine\\13.0\\SystemFiles\\WolframScript\\Windows\\app.ico",
+                "name": "Wolfram Script",
+                "opacity": 80,
+                "tabTitle": "Wolfram",
+                "useAcrylic": true
+            },
+            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "colorScheme": "Campbell Powershell",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell",
+                "opacity": 80,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": true
             }
         ]
     },
     "schemes": 
     [
         {
-            "background": "#264D3F",
+            "background": "#001A14",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#A6A6A6",
@@ -182,7 +173,7 @@
             "cursorColor": "#FFFFFF",
             "cyan": "#3A96DD",
             "foreground": "#FFFFFF",
-            "green": "#094F07",
+            "green": "#418012",
             "name": "AnacondaCmap",
             "purple": "#881798",
             "red": "#C50F1F",
@@ -191,26 +182,26 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#0A3D57",
-            "black": "#0C0C0C",
-            "blue": "#0037DA",
+            "background": "#062433",
+            "black": "#000000",
+            "blue": "#003AE6",
             "brightBlack": "#666666",
-            "brightBlue": "#6EA3FF",
-            "brightCyan": "#61D6D6",
+            "brightBlue": "#85BDFF",
+            "brightCyan": "#74FFFF",
             "brightGreen": "#16C60C",
             "brightPurple": "#B4009E",
             "brightRed": "#E74856",
             "brightWhite": "#FFFFFF",
             "brightYellow": "#F9F1A5",
             "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
+            "cyan": "#379997",
             "foreground": "#FFFFFF",
             "green": "#13A10E",
             "name": "ArchCmap",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#CAE0E3",
-            "white": "#E6E6E6",
+            "white": "#B3B3B3",
             "yellow": "#C19C00"
         },
         {
@@ -237,7 +228,7 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#012456",
+            "background": "#011026",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
@@ -283,19 +274,19 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#492B57",
+            "background": "#180E1C",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
-            "brightBlue": "#3B78FF",
-            "brightCyan": "#61D6D6",
+            "brightBlue": "#40A0FF",
+            "brightCyan": "#68E6E6",
             "brightGreen": "#16C60C",
-            "brightPurple": "#B4009E",
-            "brightRed": "#E74856",
+            "brightPurple": "#CC00B3",
+            "brightRed": "#F24C5A",
             "brightWhite": "#F2F2F2",
             "brightYellow": "#F9F1A5",
             "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
+            "cyan": "#287B99",
             "foreground": "#FFFFFF",
             "green": "#13A10E",
             "name": "JuliaCmap",
@@ -444,7 +435,30 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#57143C",
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
+            "background": "#260919",
             "black": "#0C0C0C",
             "blue": "#0037DA",
             "brightBlack": "#767676",
@@ -488,7 +502,32 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#260300",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#13A10E",
+            "name": "WolframCmap",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
         }
     ],
-    "tabWidthMode": "equal"
+    "showTabsInTitlebar": true,
+    "tabWidthMode": "equal",
+    "useAcrylicInTabRow": true
 }
