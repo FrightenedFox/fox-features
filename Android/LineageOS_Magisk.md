@@ -12,13 +12,14 @@ If something goes wrong and you cannot boot into you OS, just enter fastboot mod
 ### Making SafetyNet work
 
 To chek if the phone is ready download [YASNAC - Yet ANother SafetyNet Attestation Chacker](https://github.com/RikkaW/YASNAC) 
-(should be available in PlayStore). 
+(should be available in PlayStore). For PlayIntegrity check install Play Integrity API Checker.
 
 _Some steps may have been lost, but those are 100% necessary..._
 1. Install Systemless Host Magisk Module
 2. Install [Universal SafetyNet Fix](https://github.com/kdrag0n/safetynet-fix) Magisk Module or its 
     [modification by Displax](https://github.com/Displax/safetynet-fix/) (the first one doesn't work for me).
-3. Activate Zygisk (Zygote on Magisk) and add the following apps there:
+3. Since November 2023 Play Integrity feature doesn't work (YASNAC doesn't detect this), so [PlayIntegrityFix](https://github.com/chiteroman/PlayIntegrityFix) should be installed too. 
+4. Activate Zygisk (Zygote on Magisk) and add the following apps there:
     - Google Play Store
     - Google Services Framework
     - Google Wallet
