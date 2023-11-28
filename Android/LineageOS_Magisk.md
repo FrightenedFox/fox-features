@@ -14,8 +14,10 @@
     At this point something may go wrong and you won't be able to boot into your system after Magisk installation. Then you just need to enter **fastboot mode** and flash boot with boot.img from the 
     [official LineageOS page](https://download.lineageos.org/devices/instantnoodlep/builds) with `fastboot flash boot boot.img`. After doing so you will end up with bare Lineage OS without root. Now repeat the whole process from the beggining or search for the solution yourself.
 
-6. Make sure Zygisk is enabled. Perform basic Magisk "hiding": hide app, rename it, enable zygotta. Enable battery unrestricted mode in system settings for Magisk (or "Better Options"), it may help reduce number of false alerts. 
-7. That's it, your device now should be fully rooted and work nice.
+6. Turn off all Zygisk modules (SafetyNet Fix, PlayIntegrityFix, etc). Enable zygisk and reboot your phone.
+7. After rebooting, enable all the modules back and reboot your phone again. Now Zygisk should work.
+8. Perform basic Magisk "hiding": hide app, rename it. Enable battery unrestricted mode in system settings for Magisk (or "Better Options"), it may help reduce number of false alerts. 
+9. That's it, your device now should be fully rooted and they may work nice.
 
 ### Making SafetyNet work
 
