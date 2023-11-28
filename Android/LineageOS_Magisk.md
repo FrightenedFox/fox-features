@@ -8,7 +8,7 @@
 1. Update OS normally (through settings).
 2. Download latest Magisk APK from [their GitHub](https://github.com/topjohnwu/Magisk/releases/) to your computer
 3. Enter **fastboot mode** (recovery mode) and sideload Magisk `adb sideload Magisk.apk` (accept installation from phone, by clicking YES). After installation is successful unplug your phone from the PC.
-4. Reboot notmally to the system (After logging in several more reboots will probably happen, just ignore them. If "factory reset window" appears, that means that you most likely didn't disable Company Portal. At this point just ignore all of the reboots and pop-up windows and when fastboot mode appears, select **try again** option, but when you will be able to use your phone again, don't forget to diable company portal).
+4. Reboot notmally to the system (After logging in several more reboots will probably happen, just ignore them. If "factory reset window" appears, that means that you most likely some of the Magisk modules installed is conflicting with your phone. At this point just ignore all of the reboots and pop-up windows and when fastboot mode appears, select **try again** option, but when you will be able to use your phone again, don't forget to remove all Zgisk modules installed).
 5. Once rebooting sequence finished and you can use your apps - open Magisk (or Better Settings) and install both **App** and **Magisk (then direct installation)** (in the specified order). Once again lots of phone reboots will probably happen, behave the same as in the previous step.
     
     At this point something may go wrong and you won't be able to boot into your system after Magisk installation. Then you just need to enter **fastboot mode** and flash boot with boot.img from the 
