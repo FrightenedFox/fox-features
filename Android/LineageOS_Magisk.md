@@ -1,6 +1,6 @@
 ### Updating Lineago OS 23 (Android 13) on OnePlus 8 Pro (IN2020)
 
-> **Caution!** Updates won't work with Company Portal installed. To update your phone you first need to get rid of it (open Company Portal and in the left burger menu there will be option to remove it). After doing so, enable USB Debugging in the Developer Options if it was disabled.
+> **Caution!** Updates won't work with Company Portal installed. To update your phone you first need to get rid of it (better remove all company apps, but if you don't won't to, you can try openning Company Portal and in the left burger menu there will be option to remove company administration only). After doing so, enable USB Debugging in the Developer Options if it was disabled.
 
 > **Info:** patching `boot.img` won't work on your device, so follow this tutorial instead.
 
