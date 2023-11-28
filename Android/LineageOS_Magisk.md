@@ -1,13 +1,21 @@
-### Updating OS on OnePlus 8 Pro
+### Updating Lineago OS 23 (Android 13) on OnePlus 8 Pro (IN2020)
 
-Patching boot.img won't work, so follow this: 
-1. Update OS normally
+> **Caution!** Updates won't work with Company Portal installed. To update your phone you first need to get rid of it (open Company Portal and in the left burger menu there will be option to remove it). After doing so, enable USB Debugging in the Developer Options if it was disabled.
+
+> **Info:** patching `boot.img` won't work on your device, so follow this tutorial instead.
+
+ 
+1. Update OS normally (through settings).
 2. Download latest Magisk APK from [their GitHub](https://github.com/topjohnwu/Magisk/releases/) to your computer
-3. Enter fastboot mode and `adb sideload Magisk.apk`
+3. Enter **fastboot mode** (recovery mode) and sideload Magisk `adb sideload Magisk.apk` (accept installation from phone, by clicking YES). After installation is successful unplug your phone from the PC.
+4. Reboot notmally to the system (After logging in several more reboots will probably happen, just ignore them. If "factory reset window" appears, that means that you most likely didn't disable Company Portal. At this point just ignore all of the reboots and pop-up windows and when fastboot mode appears, select **try again** option, but when you will be able to use your phone again, don't forget to diable company portal).
+5. Once rebooting sequence finished and you can use your apps - open Magisk (or Better Settings) and install both **App** and **Magisk (then direct installation)** (in the specified order). Once again lots of phone reboots will probably happen, behave the same as in the previous step.
+    
+    At this point something may go wrong and you won't be able to boot into your system after Magisk installation. Then you just need to enter **fastboot mode** and flash boot with boot.img from the 
+    [official LineageOS page](https://download.lineageos.org/devices/instantnoodlep/builds) with `fastboot flash boot boot.img`. After doing so you will end up with bare Lineage OS without root. Now repeat the whole process from the beggining or search for the solution yourself.
 
-If something goes wrong and you cannot boot into you OS, just enter fastboot mode and flash boot with boot.img from the 
-[official LineageOS page](https://download.lineageos.org/devices/instantnoodlep/builds) with `fastboot flash boot boot.img`
-
+6. Make sure Zygisk is enabled. Perform basic Magisk "hiding": hide app, rename it, enable zygotta. Enable battery unrestricted mode in system settings for Magisk (or "Better Options"), it may help reduce number of false alerts. 
+7. That's it, your device now should be fully rooted and work nice.
 
 ### Making SafetyNet work
 
@@ -23,11 +31,11 @@ _Some steps may have been lost, but those are 100% necessary..._
     - Google Play Store
     - Google Services Framework
     - Google Wallet
+    - Google Play Services
     - McDonald's
     - any banking apps
   
-At this point it seems to run quite reliably for me, but I remember changing some ID of my device, so it shows up as Android 9 
-or something, when in reality it is Android 13. 
+At this point it seems to run quite reliably for me, but I remember changing some ID of my device, so it shows up as Android 9 or something, when in reality it is Android 13. 
 
 
 ### Other useful Magisk Modules
