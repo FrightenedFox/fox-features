@@ -2,7 +2,7 @@
 
 Patching boot.img won't work, so follow this: 
 1. Update OS normally
-2. Download latest Magisk APK from [their GitHub](https://github.com/topjohnwu/Magisk/releases/tag/v26.3) to your computer
+2. Download latest Magisk APK from [their GitHub](https://github.com/topjohnwu/Magisk/releases/) to your computer
 3. Enter fastboot mode and `adb sideload Magisk.apk`
 
 If something goes wrong and you cannot boot into you OS, just enter fastboot mode and flash boot with boot.img from the 
